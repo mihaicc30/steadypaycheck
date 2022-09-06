@@ -1,0 +1,331 @@
+
+    
+
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area" style="display: none;">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="wrapper">
+                <div class="cssload-loader"></div>
+            </div>
+        </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->    
+
+	<div class="page-wraper">
+       
+    	
+        <!-- Sidebar Holder -->
+        <%- include('./partials/nav'); -%>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <div class="content-admin-main">
+
+            	<div class="wt-admin-right-page-header clearfix">
+                    <h2>Post a Job</h2>
+                    <div class="breadcrumbs"><a href="#">Home</a><a href="#">Dasboard</a><span>Job Submission Form</span></div>
+                </div>
+
+                <!--Logo and Cover image-->
+                <!-- <div class="panel panel-default">
+                    <div class="panel-heading wt-panel-heading p-a20">
+                        <h4 class="panel-tittle m-a0">Logo and Cover image</h4>
+                    </div>
+                    <div class="panel-body wt-panel-body p-a20 p-b0 m-b30 ">
+                        
+                        <div class="row">
+                                
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group">
+                                    
+                                    <div class="dashboard-profile-pic">
+                                        <div class="dashboard-profile-photo">
+                                            <img src="images/jobs-company/pic1.jpg" alt="">
+                                            <div class="upload-btn-wrapper">
+                                                <button class="site-button button-sm">Upload Photo</button>
+                                                <input type="file" name="myfile">
+                                            </div>
+                                        </div>
+                                        <p><b>Company Logo :- </b> Max file size is 1MB, Minimum dimension: 136 x 136 And Suitable files are .jpg & .png</p>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="col-lg-12 col-md-6">
+                                <div class="dashboard-cover-pic">
+                                    <form action="upload.php" class="dropzone"></form>
+                                    <p><b>Background Banner Image :- </b> Max file size is 1MB, Minimum dimension: 770 x 310 And Suitable files are .jpg & .png</p> 
+                                </div>                                    
+                            </div>
+
+                        </div>
+                                    
+                    </div>
+                </div>  -->
+
+                <!--Basic Information-->
+                <div class="panel panel-default">
+                    <div class="panel-heading wt-panel-heading p-a20">
+                        <h4 class="panel-tittle m-a0"><i class="fa fa-suitcase"></i>Job Details</h4>
+                    </div>
+                    <div class="panel-body wt-panel-body p-a20 m-b30 ">
+                        <form>
+                            <div class="row">
+                                    
+                                    <!--Job Category--> 
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group city-outer-bx has-feedback">
+                                            <label>Job Category</label>
+                                            <div class="ls-inputicon-box">  
+                                                <div class="dropdown bootstrap-select wt-select-box"><select class="wt-select-box selectpicker" data-live-search="true" title="" id="j-category" data-bv-field="size">
+                                                    <option disabled="" selected="" value="">Select Category</option>
+                                                    <option>Accounting and Finance</option>
+                                                    <option>Clerical &amp; Data Entry</option>
+                                                    <option>Counseling</option>
+                                                    <option>Court Administration</option>
+                                                    <option>Human Resources</option>
+                                                    <option>Investigative</option>
+                                                    <option>IT and Computers</option>
+                                                    <option>Law Enforcement</option>
+                                                    <option>Management</option>
+                                                    <option>Miscellaneous</option>
+                                                    <option>Public Relations</option>
+                                                </select><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                                <i class="fs-input-icon fa fa-border-all"></i>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Job Type--> 
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label>Job Type</label>
+                                            <div class="ls-inputicon-box">  
+                                                <div class="dropdown bootstrap-select wt-select-box"><select class="wt-select-box selectpicker" data-live-search="true" title="" id="s-category" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Select Category</option>
+                                                    <option>Full Time</option>
+                                                    <option>Freelance</option>
+                                                    <option>Part Time</option>
+                                                    <option>Internship</option>
+                                                    <option>Temporary</option>
+                                                </select><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-2" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                                <i class="fs-input-icon fa fa-file-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Offered Salary--> 
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label>Offered Salary</label>
+                                            <div class="ls-inputicon-box">  
+                                                <div class="dropdown bootstrap-select wt-select-box"><select class="wt-select-box selectpicker" data-live-search="true" title="" id="salary" data-bv-field="size" tabindex="null">
+                                                    <option class="bs-title-option" value="">Salary</option>
+                                                    <option>$500</option>
+                                                    <option>$1000</option>
+                                                    <option>$1500</option>
+                                                    <option>$2000</option>
+                                                    <option>$2500</option>
+                                                </select><div class="dropdown-menu" style="max-height: 484.24px; overflow: hidden; min-height: 191px;"><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-3" aria-autocomplete="list" aria-activedescendant="bs-select-3-0"></div><div class="inner show" role="listbox" id="bs-select-3" tabindex="-1" style="max-height: 398.24px; overflow: hidden auto; min-height: 105px;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class="selected active"><a role="option" class="dropdown-item bs-title-option selected active" id="bs-select-3-0" tabindex="0" aria-setsize="6" aria-posinset="1" aria-selected="true"><span class="text">Salary</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-1" tabindex="0"><span class="text">$500</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-2" tabindex="0"><span class="text">$1000</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-3" tabindex="0"><span class="text">$1500</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-4" tabindex="0"><span class="text">$2000</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-3-5" tabindex="0"><span class="text">$2500</span></a></li></ul></div></div></div>
+                                                <i class="fs-input-icon fa fa-dollar-sign"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Experience--> 
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label>Experience</label>
+                                            <div class="ls-inputicon-box"> 
+                                                <input class="form-control" name="company_Email" type="email" placeholder="E.g. Minimum 3 years">
+                                                <i class="fs-input-icon fa fa-user-edit"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Qualification--> 
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label>Qualification</label>
+                                            <div class="ls-inputicon-box"> 
+                                                <input class="form-control" name="company_Email" type="email" placeholder="Qualification Title">
+                                                <i class="fs-input-icon fa fa-user-graduate"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    <!--Country--> 
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label>Country</label>
+                                            <div class="ls-inputicon-box">  
+                                                <div class="dropdown bootstrap-select wt-select-box"><select class="wt-select-box selectpicker" data-live-search="true" title="" id="country" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">Country</option>
+                                                    <option>Afghanistan</option>
+                                                    <option>Albania</option>
+                                                    <option>Algeria</option>
+                                                    <option>Andorra</option>
+                                                    <option>Angola</option>
+                                                    <option>Antigua and Barbuda</option>
+                                                    <option>Argentina</option>
+                                                    <option>Armenia</option>
+                                                    <option>Australia</option>
+                                                    <option>Austria</option>
+                                                    <option>Azerbaijan</option>
+                                                    <option>The Bahamas</option>
+                                                    <option>Bahrain</option>
+                                                    <option>Bangladesh</option>
+                                                    <option>Barbados</option>
+                                                </select><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-5" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-5" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                                <i class="fs-input-icon fa fa-globe-americas"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!--City--> 
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label>City</label>
+                                            <div class="ls-inputicon-box">  
+                                                <div class="dropdown bootstrap-select wt-select-box"><select class="wt-select-box selectpicker" data-live-search="true" title="" id="city" data-bv-field="size">
+                                                    <option class="bs-title-option" value="">City</option>
+                                                    <option>Sydney</option>
+                                                    <option>Melbourne</option>
+                                                    <option>Brisbane</option>
+                                                    <option>Perth</option>
+                                                    <option>Adelaide</option>
+                                                    <option>Gold Coast</option>
+                                                    <option>Cranbourne</option>
+                                                    <option>Newcastle</option>
+                                                    <option>Wollongong</option>
+                                                    <option>Geelong</option>
+                                                    <option>Hobart</option>
+                                                    <option>Townsville</option>
+                                                    <option>Ipswich</option>
+                                                </select><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-6" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-6" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                                <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!--Location--> 
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label>Location</label>
+                                            <div class="ls-inputicon-box"> 
+                                                <input class="form-control" name="company_Email" type="email" placeholder="Type Address">
+                                                <i class="fs-input-icon fa fa-map-marker-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Email Address-->
+                                    <div class="col-xl-4 col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label>Email Address</label>
+                                            <div class="ls-inputicon-box"> 
+                                                <input class="form-control" name="company_Email" type="email" placeholder="Devid@example.com">
+                                                <i class="fs-input-icon fas fa-at"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                   
+
+                                   <!--Description-->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="3" placeholder="Greetings! We are Galaxy Software Development Company. We hope you enjoy our services and quality."></textarea>
+                                        </div>
+                                    </div> 
+                                    
+                                   <!--Start Date-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Start Date</label>
+                                            <div class="ls-inputicon-box"> 
+                                                <input class="form-control datepicker" data-provide="datepicker" name="company_since" type="text" placeholder="mm/dd/yyyy">
+                                                <i class="fs-input-icon fa fa-calendar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--End Date-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>End Date</label>
+                                            <div class="ls-inputicon-box"> 
+                                                <input class="form-control datepicker" data-provide="datepicker" name="company_since" type="text" placeholder="mm/dd/yyyy">
+                                                <i class="fs-input-icon fa fa-calendar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                
+                                    <div class="col-lg-12 col-md-12">                                   
+                                        <div class="text-left">
+                                            <button type="submit" class="site-button m-r5">Publish Job</button>
+                                            <button type="submit" class="site-button outline-primary">Save Draft</button>
+                                        </div>
+                                    </div> 
+
+                                   
+                                   
+                                                                                                         
+                            </div>
+                       </form>             
+                    </div>
+                </div>
+
+            </div>
+
+    	</div>
+
+        <!--Delete Profile Popup-->
+        <div class="modal fade twm-model-popup" id="delete-dash-profile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Do you want to delete your profile?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="site-button outline-primary">Yes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!--Logout Profile Popup-->
+        <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Do you want to Logout your profile?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="site-button outline-primary">Yes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+	</div>
+
+

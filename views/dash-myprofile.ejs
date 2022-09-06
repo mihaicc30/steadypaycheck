@@ -1,0 +1,252 @@
+
+    
+
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area" style="display: none;">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="wrapper">
+                <div class="cssload-loader"></div>
+            </div>
+        </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->    
+
+	<div class="page-wraper">
+       
+    	
+        <!-- Sidebar Holder -->
+        <%- include('./partials/nav'); -%>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <div class="content-admin-main">
+
+
+            	<div class="wt-admin-right-page-header clearfix">
+                    <h2>My Profile</h2>
+                    <div class="breadcrumbs"><a href="#">Home</a><a href="#">Dasboard</a><span>Profile</span></div>
+                </div>
+
+                <form>
+                <div class="panel panel-default">
+
+                    <div class="panel-body wt-panel-body p-a20">
+                        
+                        <div class="row">
+                                            
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="dashboard-profile-section clearfix">
+                                        <div class="dashboard-profile-pic">
+                                        <h4 class="panel-tittle m-a0">Update Profile Image</h4>
+
+                                            <div class="dashboard-profile-photo">
+                                                <img src="images/user-avtar/pic4.jpg" alt="">
+                                                <div class="upload-btn-wrapper">
+                                                    <button class="site-button button-sm">Upload New Photo</button>
+                                                    <input type="file" name="myfile">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div> 
+                                </div>
+                                
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <h4 class="panel-tittle m-a0">Upload CV</h4>
+                                        <div class="ls-inputicon-box"> 
+                                            <div class="col-lg-12 col-md-12">                                   
+                                                <div class="text-left">
+                                                    <input type="file" class="site-button"> &nbsp;
+                                                </div>
+                                            </div> 
+                                            <div class="col-lg-12 col-md-12">                                   
+                                                <div class="text-left">
+                                                    <button type="submit" class="site-button">Save Changes</button>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel-heading wt-panel-heading p-a20">
+                    </div>
+
+                </div>
+
+                <div class="panel-heading wt-panel-heading p-a20">
+                </div>
+                <!--Basic Information-->
+                <div class="panel panel-default">
+                    <div class="panel-heading wt-panel-heading p-a20">
+                        <h4 class="panel-tittle m-a0">Basic Informations</h4>
+                    </div>
+                    <div class="panel-body wt-panel-body p-a20 m-b30 ">
+                        
+                        <div class="row">
+                                            
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <label>Your Name</label>
+                                        <div class="ls-inputicon-box"> 
+                                            <input class="form-control" name="company_name" type="text" placeholder="Devid Smith">
+                                            <i class="fs-input-icon fa fa-user "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <label>Phone</label>
+                                        <div class="ls-inputicon-box"> 
+                                            <input class="form-control" name="company_phone" type="text" placeholder="+44 7443 350 891">
+                                            <i class="fs-input-icon fa fa-phone-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <label>Email Address</label>
+                                        <div class="ls-inputicon-box"> 
+                                            <input class="form-control" name="company_Email" type="email" placeholder="Devid@example.com">
+                                            <i class="fs-input-icon fas fa-at"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <label>Qualifications</label>
+                                        <div class="ls-inputicon-box"> 
+                                            <input class="form-control" name="company_since" type="text" placeholder="Qualification">
+                                            <i class="fs-input-icon fa fa-user-graduate"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <label>Languages</label>
+                                        <div class="ls-inputicon-box"> 
+                                            <input class="form-control" name="company_since" type="text" placeholder="e.x English, Spanish">
+                                            <i class="fs-input-icon fa fa-language"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                            
+                                <div class="col-lg-12 col-md-12">                                   
+                                    <div class="text-left">
+                                        <button type="submit" class="site-button">Save Changes</button>
+                                    </div>
+                                </div> 
+                                                                    
+                            
+                        </div>
+                                  
+                    </div>
+                </div>
+
+                <!--Social Network-->
+                <div class="panel panel-default">
+                    <div class="panel-heading wt-panel-heading p-a20">
+                        <h4 class="panel-tittle m-a0">Social Network</h4>
+                    </div>
+                    <div class="panel-body wt-panel-body p-a20 m-b30 ">
+                        
+                        <div class="row">
+                                
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="form-group">
+                                        <label>Facebook</label>
+                                        <div class="ls-inputicon-box"> 
+                                            <input class="form-control wt-form-control" name="company_name" type="text" placeholder="https://www.facebook.com/">
+                                            <i class="fs-input-icon fab fa-facebook-f"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6">    
+                                    <div class="form-group">
+                                        <label>linkedin</label>
+                                        <div class="ls-inputicon-box"> 
+                                            <input class="form-control wt-form-control" name="company_name" type="text" placeholder="https://in.linkedin.com/">
+                                            <i class="fs-input-icon fab fa-linkedin-in"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6">     
+                                    <div class="form-group">
+                                        <label>Whatsapp</label>
+                                        <div class="ls-inputicon-box"> 
+                                            <input class="form-control wt-form-control" name="company_name" type="text" placeholder="https://www.whatsapp.com/">
+                                            <i class="fs-input-icon fab fa-whatsapp"></i>
+                                        </div>
+                                    </div>
+                                </div> 
+                                                                           
+                            <div class="col-lg-12 col-md-12">                                   
+                                    <div class="text-left">
+                                        <button type="submit" class="site-button">Save Changes</button>
+                                    </div>
+                                </div> 
+                                                                    
+                            
+                        </div>
+                                  
+                    </div>
+                </div>
+                </form> 
+       
+                                                     
+            </div>
+
+    	</div>
+
+        <!--Delete Profile Popup-->
+        <div class="modal fade twm-model-popup" id="delete-dash-profile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Do you want to delete your profile?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="site-button outline-primary">Yes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!--Logout Profile Popup-->
+        <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Do you want to Logout your profile?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="site-button outline-primary">Yes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+	</div>
+
+
