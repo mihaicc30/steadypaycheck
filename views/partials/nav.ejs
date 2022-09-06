@@ -9,18 +9,23 @@
                 <a href="dash-dashboard"><i class="fa fa-home"></i><span class="admin-nav-text">Dashboard</span></a>
             </li>
 
-            <li>
-                <a href="#"><i class="fa fa-user-tie"></i><span class="admin-nav-text">Company Profile</span></a>
+            <li <% if(String(page).startsWith("/dash-company-profile") ){ %>class="active has-child" <% } %>>
+                <a href="dash-company-profile"><i class="fa fa-user-tie"></i><span class="admin-nav-text">Company Profile</span></a>
+            </li>
+            
+            <li <% if(String(page).startsWith("/dash-myprofile") ){ %>class="active has-child" <% } %>>
+                <a href="dash-myprofile"><i class="fa fa-user"></i><span class="admin-nav-text">My Profile</span></a>
             </li>
 
             <li <% if(String(page) == "/dash-post-job" ){ %>class="active has-child" <% } %> >
                 <a href="dash-post-job"><i class="fa fa-suitcase"></i><span class="admin-nav-text">Post Jobs</span></a>
+                <a href="dash-post-job"><i class="fa fa-suitcase"></i><span class="admin-nav-text">Jobs Applications</span></a>
             </li>
             <li>
                 <a href="candidates"><i class="fa fa-user-friends"></i><span class="admin-nav-text">Candidates</span></a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bookmark"></i><span class="admin-nav-text">Bookmark Resumes</span></a>
+                <a href="#"><i class="fa fa-bookmark"></i><span class="admin-nav-text">Bookmarks</span></a>
             </li>
 
             <li>
@@ -31,14 +36,7 @@
                 <a href="dash-messages"><i class="fa fa-envelope"></i><span class="admin-nav-text">Messages <sup class="twm-msg-noti">5</sup></span></a>
                 
             </li>
-
-            <li>
-                <a href="#"><i class="fa fa-bell"></i><span class="admin-nav-text">Resume Alerts</span></a>
-            </li>  
             
-            <li <% if(String(page).startsWith("/dash-myprofile") ){ %>class="active has-child" <% } %>>
-                <a href="dash-myprofile"><i class="fa fa-user"></i><span class="admin-nav-text">My Profile</span></a>
-            </li>
 
             <li>
                 <a href="#"><i class="fa fa-fingerprint"></i><span class="admin-nav-text">Change Password</span></a>

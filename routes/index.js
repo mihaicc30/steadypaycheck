@@ -23,6 +23,7 @@ router.get('/dash-post-job', (req, res) => res.render('dash-post-job', { page: r
 router.get('/dash-messages', (req, res) => res.render('dash-messages', { page: req.url }));
 router.get('/dash-dashboard', (req, res) => res.render('dash-dashboard', { page: req.url }));
 router.get('/dash-myprofile', (req, res) => res.render('dash-myprofile', { page: req.url }));
+router.get('/dash-company-profile', (req, res) => res.render('dash-company-profile', { page: req.url }));
 
 
 router.get('/employer-ArtistreStudio', (req, res) => res.render('employer-ArtistreStudio', { page: req.url }));
