@@ -646,14 +646,14 @@ All JavaScript fuctions Start
     Window on scroll ALL FUNCTION START
 ---------------------------------------------------------------------------------------------*/
 
-    function color_fill_header() {
-        var scroll = $(window).scrollTop();
-        if(scroll >= 100) {
-            $(".is-fixed").addClass("color-fill");
-        } else {
-            $(".is-fixed").removeClass("color-fill");
-        }
-    }
+    // function color_fill_header() {
+    //     var scroll = $(window).scrollTop();
+    //     if(scroll >= 0) {
+    //         $(".is-fixed").addClass("color-fill");
+    //     } else {
+    //         $(".is-fixed").removeClass("color-fill");
+    //     }
+    // }
 	
 
 /*--------------------------------------------------------------------------------------------
@@ -741,10 +741,10 @@ jQuery(window).on('load', function () {
 	Window Scroll ALL FUNCTION START
 ===========================*/
 
-jQuery(window).on('scroll', function () {
-// > Window on scroll header color fill 
-	color_fill_header();
-});
+// jQuery(window).on('scroll', function () {
+// // > Window on scroll header color fill 
+// 	color_fill_header();
+// });
 	
 
 /*===========================
