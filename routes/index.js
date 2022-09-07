@@ -24,6 +24,9 @@ router.get('/dash-messages', (req, res) => res.render('dash-messages', { page: r
 router.get('/dash-dashboard', (req, res) => res.render('dash-dashboard', { page: req.url }));
 router.get('/dash-myprofile', (req, res) => res.render('dash-myprofile', { page: req.url }));
 router.get('/dash-company-profile', (req, res) => res.render('dash-company-profile', { page: req.url }));
+router.get('/dash-candidates', (req, res) => res.render('dash-candidates', { page: req.url }));
+router.get('/dash-job-app', (req, res) => res.render('dash-job-app', { page: req.url }));
+router.get('/dash-password', (req, res) => res.render('dash-password', { page: req.url }));
 
 
 router.get('/employer-ArtistreStudio', (req, res) => res.render('employer-ArtistreStudio', { page: req.url }));

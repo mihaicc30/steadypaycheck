@@ -6,7 +6,7 @@
     <div class="scroll-wrapper admin-nav scrollbar-macosx" style="position: relative;"><div class="scroll-wrapper admin-nav scrollbar-macosx scroll-content" style="position: relative;"><div class="admin-nav scrollbar-macosx scroll-content" style="height: 761px; margin-bottom: 0px; margin-right: 0px; max-height: none;">
         <ul>
             <li <% if(String(page) == "/dash-dashboard" ){ %>class="active has-child" <% } %>>
-                <a href="dash-dashboard"><i class="fa fa-home"></i><span class="admin-nav-text">Dashboard</span></a>
+                <a href="dash-dashboard"><i class="fa fa-tasks"></i><span class="admin-nav-text">Dashboard</span></a>
             </li>
 
             <li <% if(String(page).startsWith("/dash-company-profile") ){ %>class="active has-child" <% } %>>
@@ -19,17 +19,13 @@
 
             <li <% if(String(page) == "/dash-post-job" ){ %>class="active has-child" <% } %> >
                 <a href="dash-post-job"><i class="fa fa-suitcase"></i><span class="admin-nav-text">Post Jobs</span></a>
-                <a href="dash-post-job"><i class="fa fa-suitcase"></i><span class="admin-nav-text">Jobs Applications</span></a>
+                
             </li>
-            <li>
-                <a href="candidates"><i class="fa fa-user-friends"></i><span class="admin-nav-text">Candidates</span></a>
+            <li <% if(String(page) == "/dash-candidates" ){ %>class="active has-child" <% } %>>
+                <a href="dash-candidates"><i class="fa fa-user-friends"></i><span class="admin-nav-text">Candidates</span></a>
             </li>
-            <li>
-                <a href="#"><i class="fa fa-bookmark"></i><span class="admin-nav-text">Bookmarks</span></a>
-            </li>
-
-            <li>
-                <a href="#"><i class="fa fa-money-bill-alt"></i><span class="admin-nav-text">Packages</span></a>
+            <li <% if(String(page) == "/dash-job-app" ){ %>class="active has-child" <% } %>>
+                <a href="dash-job-app"><i class="fa fa-suitcase"></i><span class="admin-nav-text">Jobs Applications</span></a>
             </li>
               
             <li <% if(String(page) == "/dash-messages" ){ %>class="active has-child" <% } %>>
@@ -38,8 +34,8 @@
             </li>
             
 
-            <li>
-                <a href="#"><i class="fa fa-fingerprint"></i><span class="admin-nav-text">Change Password</span></a>
+            <li <% if(String(page) == "/dash-password" ){ %>class="active has-child" <% } %>>
+                <a href="dash-password"><i class="fa fa-fingerprint"></i><span class="admin-nav-text">Change Password</span></a>
             </li>
             
             <li>

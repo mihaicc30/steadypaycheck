@@ -1,0 +1,518 @@
+<!-- LOADING AREA START ===== -->
+<div class="loading-area" style="display: none;">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+        <div class="wrapper">
+            <div class="cssload-loader"></div>
+        </div>
+    </div>
+</div>
+<!-- LOADING AREA  END ====== -->
+
+<div class="page-wraper">
+
+
+    <!-- Sidebar Holder -->
+    <%- include('./partials/nav'); -%>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <div class="content-admin-main">
+
+                <div class="wt-admin-right-page-header clearfix">
+                    <h2>Manage Jobs</h2>
+                    <div class="breadcrumbs"><a href="#">Home</a><a href="#">Dasboard</a><span>My Job Listing</span>
+                    </div>
+                </div>
+
+                <!--Basic Information-->
+                <div class="panel panel-default">
+                    <div class="panel-heading wt-panel-heading p-a20">
+                        <h4 class="panel-tittle m-a0"><i class="fa fa-suitcase"></i> Job Details</h4>
+                    </div>
+                    <div class="panel-body wt-panel-body p-a20 m-b30 ">
+                        <div class="twm-D_table p-a20 table-responsive">
+                            <div id="jobs_bookmark_table_wrapper" class="dataTables_wrapper dt-bootstrap5">
+                                <div class="row">
+                                    <!-- <div class="col-sm-12 col-md-6">
+                                        <div class="dataTables_length" id="jobs_bookmark_table_length"><label>Show
+                                                <select name="jobs_bookmark_table_length"
+                                                    aria-controls="jobs_bookmark_table"
+                                                    class="form-select form-select-sm">
+                                                    <option value="3">3</option>
+                                                    <option value="5">5</option>
+                                                    <option value="10">10</option>
+                                                    <option value="-1">All</option>
+                                                </select> entries</label></div>
+                                    </div> -->
+                                    <!-- <div class="col-sm-12 col-md-6">
+                                        <div id="jobs_bookmark_table_filter" class="dataTables_filter">
+                                            <label>Search:<input type="search" class="form-control form-control-sm"
+                                                    placeholder="" aria-controls="jobs_bookmark_table"></label></div>
+                                    </div> -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table id="jobs_bookmark_table"
+                                            class="table table-bordered twm-bookmark-list-wrap dataTable"
+                                            aria-describedby="jobs_bookmark_table_info">
+                                            <thead>
+                                                <tr>
+                                                    <th class="sorting sorting_asc" tabindex="0"
+                                                        aria-controls="jobs_bookmark_table" rowspan="1" colspan="1"
+                                                        aria-sort="ascending"
+                                                        aria-label="Job Title: activate to sort column descending"
+                                                        style="width: 364.358px;">Job Title</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="jobs_bookmark_table"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Category: activate to sort column ascending"
+                                                        style="width: 95.9028px;">Category</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="jobs_bookmark_table"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Job Types: activate to sort column ascending"
+                                                        style="width: 86.3542px;">Job Types</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="jobs_bookmark_table"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Applications: activate to sort column ascending"
+                                                        style="width: 94.8958px;">Applications</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="jobs_bookmark_table"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Created &amp;amp; Expired: activate to sort column ascending"
+                                                        style="width: 114.826px;">Created &amp; Expired</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="jobs_bookmark_table"
+                                                        rowspan="1" colspan="1"
+                                                        aria-label="Action: activate to sort column ascending"
+                                                        style="width: 65.9896px;">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!--1-->
+                                                
+                                                <!--2-->
+                                                
+            
+                                                <!--3-->
+                                                
+            
+                                                <!--4-->
+                                                
+            
+                                                <!--5-->
+                                                
+            
+                                                <!--6-->
+                                                
+                                                <!--7-->
+                                                
+                                                
+                                            <tr class="odd">
+                                                    <td class="sorting_1">
+                                                        <div class="twm-bookmark-list">
+                                                            <div class="twm-media">
+                                                                <div class="twm-media-pic">
+                                                                   <img src="images/jobs-company/pic4.jpg" alt="#">
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-mid-content">
+                                                                <a href="#" class="twm-job-title">
+                                                                    <h4>Art Production Specialist</h4>
+                                                                    <p class="twm-bookmark-address">
+                                                                        <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
+                                                                    </p>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td>Product Designer</td>
+                                                    <td><div class="twm-jobs-category"><span class="twm-bg-sky">Freelancer</span></div></td>
+                                                    <td><a href="javascript:;" class="site-text-primary">13 Applied</a></td>
+                                                    <td>
+                                                        <div>08/06/2022</div>
+                                                        <div>28/06/2022</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <button title="View profile">
+                                                                        <span class="fa fa-eye"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Edit">
+                                                                        <span class="far fa-edit"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Delete">
+                                                                        <span class="far fa-trash-alt"></span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr><tr class="even">
+                                                    <td class="sorting_1">
+                                                        <div class="twm-bookmark-list">
+                                                            <div class="twm-media">
+                                                                <div class="twm-media-pic">
+                                                                   <img src="images/jobs-company/pic3.jpg" alt="#">
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-mid-content">
+                                                                <a href="#" class="twm-job-title">
+                                                                    <h4>IT Department Manager</h4>
+                                                                    <p class="twm-bookmark-address">
+                                                                        <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
+                                                                    </p>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td>PHP Developer</td>
+                                                    <td><div class="twm-jobs-category"><span class="twm-bg-purple">Fulltime</span></div></td>
+                                                    <td><a href="javascript:;" class="site-text-primary">06 Applied</a></td>
+                                                    <td>
+                                                        <div>08/06/2022</div>
+                                                        <div>28/06/2022</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <button title="View profile">
+                                                                        <span class="fa fa-eye"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Edit">
+                                                                        <span class="far fa-edit"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Delete">
+                                                                        <span class="far fa-trash-alt"></span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr><tr class="odd">
+                                                    <td class="sorting_1">
+                                                        <div class="twm-bookmark-list">
+                                                            <div class="twm-media">
+                                                                <div class="twm-media-pic">
+                                                                   <img src="images/jobs-company/pic5.jpg" alt="#">
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-mid-content">
+                                                                <a href="#" class="twm-job-title">
+                                                                    <h4>Recreation &amp; Fitness Worker</h4>
+                                                                    <p class="twm-bookmark-address">
+                                                                        <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
+                                                                    </p>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td>Gym Trainer</td>
+                                                    <td><div class="twm-jobs-category"><span class="twm-bg-golden">Temporary</span></div></td>
+                                                    <td><a href="javascript:;" class="site-text-primary">08 Applied</a></td>
+                                                    <td>
+                                                        <div>08/06/2022</div>
+                                                        <div>28/06/2022</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <button title="View profile">
+                                                                        <span class="fa fa-eye"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Edit">
+                                                                        <span class="far fa-edit"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Delete">
+                                                                        <span class="far fa-trash-alt"></span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr><tr class="even">
+                                                    <td class="sorting_1">
+                                                        <div class="twm-bookmark-list">
+                                                            <div class="twm-media">
+                                                                <div class="twm-media-pic">
+                                                                   <img src="images/jobs-company/pic1.jpg" alt="#">
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-mid-content">
+                                                                <a href="#" class="twm-job-title">
+                                                                    <h4>Senior Web Designer</h4>
+                                                                    <p class="twm-bookmark-address">
+                                                                        <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
+                                                                    </p>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td>Web Designer</td>
+                                                    <td><div class="twm-jobs-category"><span class="twm-bg-green">Part Time</span></div></td>
+                                                    <td><a href="javascript:;" class="site-text-primary">03 Applied</a></td>
+                                                    <td>
+                                                        <div>08/06/2022</div>
+                                                        <div>28/06/2022</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <button title="View profile">
+                                                                        <span class="fa fa-eye"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Edit">
+                                                                        <span class="far fa-edit"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Delete">
+                                                                        <span class="far fa-trash-alt"></span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr><tr class="odd">
+                                                    <td class="sorting_1">
+                                                        <div class="twm-bookmark-list">
+                                                            <div class="twm-media">
+                                                                <div class="twm-media-pic">
+                                                                   <img src="images/jobs-company/pic1.jpg" alt="#">
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-mid-content">
+                                                                <a href="#" class="twm-job-title">
+                                                                    <h4>Senior Web Designer</h4>
+                                                                    <p class="twm-bookmark-address">
+                                                                        <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
+                                                                    </p>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td>Web Designer</td>
+                                                    <td><div class="twm-jobs-category"><span class="twm-bg-green">New</span></div></td>
+                                                    <td><a href="javascript:;" class="site-text-primary">14 Applied</a></td>
+                                                    <td>
+                                                        <div>08/06/2022</div>
+                                                        <div>28/06/2022</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <button title="View profile">
+                                                                        <span class="fa fa-eye"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Edit">
+                                                                        <span class="far fa-edit"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Delete">
+                                                                        <span class="far fa-trash-alt"></span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr><tr class="even">
+                                                    <td class="sorting_1">
+                                                        <div class="twm-bookmark-list">
+                                                            <div class="twm-media">
+                                                                <div class="twm-media-pic">
+                                                                   <img src="images/jobs-company/pic2.jpg" alt="#">
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-mid-content">
+                                                                <a href="#" class="twm-job-title">
+                                                                    <h4>Sr. Rolling Stock Technician</h4>
+                                                                    <p class="twm-bookmark-address">
+                                                                        <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
+                                                                    </p>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td>Product Manager</td>
+                                                    <td><div class="twm-jobs-category"><span class="twm-bg-brown">Intership</span></div></td>
+                                                    <td><a href="javascript:;" class="site-text-primary">05 Applied</a></td>
+                                                    <td>
+                                                        <div>08/06/2022</div>
+                                                        <div>28/06/2022</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <button title="View profile">
+                                                                        <span class="fa fa-eye"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Edit">
+                                                                        <span class="far fa-edit"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Delete">
+                                                                        <span class="far fa-trash-alt"></span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr><tr class="odd">
+                                                    <td class="sorting_1">
+                                                        <div class="twm-bookmark-list">
+                                                            <div class="twm-media">
+                                                                <div class="twm-media-pic">
+                                                                   <img src="images/jobs-company/pic2.jpg" alt="#">
+                                                                </div>
+                                                            </div>
+                                                            <div class="twm-mid-content">
+                                                                <a href="#" class="twm-job-title">
+                                                                    <h4>Sr. Rolling Stock Technician</h4>
+                                                                    <p class="twm-bookmark-address">
+                                                                        <i class="feather-map-pin"></i>1363-1385 Sunset Blvd Los Angeles, CA 90026, USA
+                                                                    </p>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </td>
+                                                    <td>Product Manager</td>
+                                                    <td><div class="twm-jobs-category"><span class="twm-bg-green">New</span></div></td>
+                                                    <td><a href="javascript:;" class="site-text-primary">10 Applied</a></td>
+                                                    <td>
+                                                        <div>08/06/2022</div>
+                                                        <div>28/06/2022</div>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <div class="twm-table-controls">
+                                                            <ul class="twm-DT-controls-icon list-unstyled">
+                                                                <li>
+                                                                    <button title="View profile">
+                                                                        <span class="fa fa-eye"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Edit">
+                                                                        <span class="far fa-edit"></span>
+                                                                    </button>
+                                                                </li>
+                                                                <li>
+                                                                    <button title="Delete">
+                                                                        <span class="far fa-trash-alt"></span>
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr></tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th rowspan="1" colspan="1">Job Title</th>
+                                                    <th rowspan="1" colspan="1">Category</th>
+                                                    <th rowspan="1" colspan="1">Job Types</th>
+                                                    <th rowspan="1" colspan="1">Applications</th>
+                                                    <th rowspan="1" colspan="1">Created &amp; Expired</th>
+                                                    <th rowspan="1" colspan="1">Action</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Delete Profile Popup-->
+        <div class="modal fade twm-model-popup" id="delete-dash-profile" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Do you want to delete your profile?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="site-button outline-primary">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Logout Profile Popup-->
+        <div class="modal fade twm-model-popup" id="logout-dash-profile" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Do you want to Logout your profile?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="site-button" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="site-button outline-primary">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
