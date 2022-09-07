@@ -9,6 +9,9 @@ const dotenv = require('dotenv').config();
 // Home Page
 router.get('/index', (req, res) => res.render('index', { page: req.url }));
 router.get('/', (req, res) => res.render('index', { page: req.url }));
+router.get('/storyboard', (req, res) => res.json({
+    'storyboard_image_url':'/images/page-screenshots/storyboard.png'
+})   );
 
 
 router.get('/job-detail', (req, res) => res.render('job-detail', { page: req.url }));
