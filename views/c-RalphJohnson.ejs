@@ -52,20 +52,82 @@
                                         </script>
                                         <img src="images/candidates/pic3.jpg" alt="#" style="border-radius: 50%;">
                                         
-                                        <div class="d-flex gap-2 flex-column my-3" >
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="99">Introvert</div>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="75">Feeling</div>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="45">Perceving</div>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="15">Intuition</div>
-                                            <br>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="85">IT and Internet</div>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="65">Software</div>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="45">Mobile</div>
-                                            <br>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="95">Javascript</div>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="95">Python</div>
-                                            <div class="d-flex flex-row gap-2"><input type="range" min="1" max="100" class="slider myRange" value="45">C++</div>
-                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-center" style="gap:6rem;">
+                                            <script>function getRandom2(){
+                                                return Math.random() * (9 - 1) + 1;
+                                            }</script>
+                                            <div class="d-flex flex-column flex-25 text-center gap-2 mb-4"><strong>PERSONALITY</strong> 
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Extrovert</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs">Introvert</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Sensing</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs">Intuition</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Thinking</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs">Feeling</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Judging</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs">Perceiving</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column flex-25 text-center gap-2"><strong>TECHNOLOGY</strong> 
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">IT and Internet</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs"></p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Software</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs"></p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Mobile Apps</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs"></p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Social Networks</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs"></p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column flex-25 text-center gap-2"><strong>PREFFERED CHANNELS</strong> 
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Social Media</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs"></p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Mobile News</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs"></p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Email</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs"></p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <p class="posAbs">Traditional Ads</p><input style="position: relative;width:100%;" type="range" min="1" max="10"
+                                                        class="slider2">
+                                                    <p class="posAbs"></p>
+                                                </div>
+                                            </div>  </div>
+                                            <script defer>
+                                                document.querySelectorAll('.slider2').forEach(q=>{
+                                                    q.value=getRandom2()
+                                                })
+                                            </script>
+
 
 
                                         <a href="javascript:;" class="site-button outline-white">Hire Me Now</a>
