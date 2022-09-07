@@ -593,8 +593,8 @@ if (!myStorage.getItem('chatID')) {
 }
 
 setTimeout(function() {
-    element.classList.toggle('enter');
-}, 500);
+    element.classList.add('enter');
+}, 400);
 
 element.addEventListener("click",openElement, { once: true });
 
